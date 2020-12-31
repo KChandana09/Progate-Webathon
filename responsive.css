@@ -1,0 +1,134 @@
+/* For Tablets */
+@media only screen and (min-width: 763px) {
+    #welcome h1 {
+        font-size: 5rem;
+    }
+    #interests .interest-bottom .interest-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+        align-items: center;
+    }
+    #projects .project-item {
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #projects .project-item {
+        height: 300px;
+        margin: 0;
+        width: 80%;
+        border-radius: 0;
+    }
+    #projects .project-title {
+        align-items: center;
+    }
+    #projects .project-title .project-info {
+        height: 50%;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    #projects .project-title .project-url {
+        height: 50%;
+        margin-right: 70px;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    #about .about {
+        flex-direction: row;
+    }
+    #about .col-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 5px solid crimson; 
+    }
+    #about .col-right p {
+        text-align: center;
+        padding: 30px;
+    }
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 50px;
+    }
+    #contact .contact-item {
+        margin: 20px;
+        flex-direction: row;
+    }
+    #contact .contact-item .icon {
+        height: 80px;
+        width: 80px;
+    }
+    #contact .contact-item .icon img {
+        object-fit: contain;
+    }
+    #contact .contact-item .contact-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+        font-size: 1rem;
+        font-weight: 500;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+}
+
+/* For PC */
+@media only screen and (min-width: 1000px) {
+    #interests .interest-bottom .interest-item {
+        flex-basis: 22%;
+        margin: 0;
+        padding: 80px;
+    }
+    #contact .contact-items {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 50px;
+    }
+    #projects .project-item {
+        height: 300px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .project-title .project-url {
+        height: 50%;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+}
